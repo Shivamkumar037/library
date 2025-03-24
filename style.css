@@ -1,0 +1,321 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #000B58, #1F1A38);
+
+}
+.fixed-content{
+    height: 72vmin;
+   
+    position: static;
+}
+.nav-bar{
+    height: 12vmin;
+    width: 100vw;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #261FB3;
+    position: fixed;
+    top: 0px;
+    z-index: 10000;
+}
+.logo-box p{
+    font-family:'lato';
+    color: aliceblue;
+    font-size: 3vmin;
+    text-align: center;
+    text-shadow: 1px 1px 2px red,
+    1px 2px 2px rgb(7, 214, 255)
+    
+    ;
+
+}
+
+.nav-links{
+    width: 65%;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', Helvetica, sans-serif;
+ 
+   
+}
+.nav-links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vmin;
+  
+    
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav-links #li5{
+    background-color: #0C0950;
+    color: whitesmoke;
+    border-radius: 30px;
+    height: 5vh;
+    width: 5rem;
+    font-size: 2vmin;
+    box-shadow: 1px 1px 2px rgb(244, 73, 73);
+}
+.nav-links li{
+    list-style: none;
+    height: 3.5vh;
+    width: 5rem;
+    display: flex;
+    font-size: 1.5vmin;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    border-radius: 30px;
+    box-shadow: 1px 2px 2px rgb(0, 0, 0),
+    0px -1px 2px rgb(231, 217, 217)
+    
+    ;
+    text-align: center;
+    background-color: #261FB3;
+}
+.nav-links li:hover{
+    border: 1px solid red;
+    border-radius: 30px;
+    background-color: #241fa6;
+    box-shadow: 1px 1px 2px rgb(236, 225, 225);
+}
+.nav-bar .logo-box{
+    height:12vmin;
+    width:26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+}
+.logo{
+    height:9vmin;
+    width:9vmin ;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px black;
+}
+.head-imease{
+    height: 60vmin;
+    width: 100%;
+    
+    position: fixed;
+    top:12vmin ;
+    z-index: -100;
+    display: flex;
+    align-items: center;
+   padding-left: 10vmin;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+.head-imease .head-content{
+    height: 40vmin;
+    
+}
+.head-content {
+   display: flex;
+flex-direction: column;
+gap: 5vmin;
+}
+.head-content h1{
+    font-size: 7vmin;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.head-content p{
+    box-shadow: 1px 1px 8px black;
+    width: auto;
+    background-color: aliceblue;
+    height: 6vmin;
+    border-radius: 10px;
+}
+.head-content p input{
+    height: 6vmin;
+    width: 60vmin;
+    margin-left: 15px;
+    border: none;
+    border-left: 1px solid black;
+    background-color: rgba(252, 251, 250, 0);
+}
+.head-content i{
+    margin-left: 10px;
+    
+}
+.head-content  #submit{
+    width: 30vmin;
+    height: 7vmin;
+    margin-left: 5vmin;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px  black,
+    -1px -1px 7px  rgb(254, 254, 254)
+    ;
+    background-color: #130ba1;
+    color: aliceblue;
+    font-size: 2vh;
+}
+#submit:hover{
+    border: 2px solid whitesmoke;
+}
+
+main{
+  
+    background: linear-gradient(to right,  #7886C7, #000B58);
+   
+}
+
+.category{
+height: 7vmin;
+background-color: #453cf1;
+
+}
+.category ul{
+display: flex;
+height: 7vmin;
+justify-content: flex-start;
+flex-wrap: nowrap;
+overflow-x: scroll;
+gap: 1vmin;
+scrollbar-width: none;
+align-items: center;
+}
+.category ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 3vh;
+    border: 1px solid black;
+    margin-left: 1vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black,
+    -1px -1px 3px white;
+    background-color:#27548A ;
+}
+.category ul li:hover{
+    border: 2px solid rgb(255, 255, 255);
+}
+.category ul a{
+    width: 17vh;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.books-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
+    padding: 10px;  
+   /* ye box ko thoda space dene ke liye kiya hu  */
+
+}
+
+.books-content .box-imeages-name {
+    background-color: lightblue;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 30vmin;
+    border-radius: 10px;
+    box-shadow: 1px 1px 9px black,
+    -1px -1px 6px rgb(255, 255, 255);
+   
+}
+.books-content div p{
+   
+    width: 100%;
+    height: 7vmin;
+    font-size: 2vmin;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #A9B5DF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: inset 1px 1px 5px rgb(86, 68, 68);
+}
+#box7-8 {
+    grid-column: span 2; 
+}
+.book-img{
+    height: 70%;
+    margin-top: 8px;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.footer-copy{
+    height: 12vmin;
+    background-color: #000B58;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 1.5vh;
+}
+.logo-library{
+    height: 13vmin;
+    width: 100%;
+    background-color: #040f5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo-name-again{
+
+    font-family:'lato';
+    color: aliceblue;
+    font-size: 3vmin;
+    text-shadow: 1px 1px 2px red,
+    1px 2px 2px rgb(7, 214, 255);
+    margin-left: 3vmin;
+}
+.footer-content{
+    height: auto;
+    width: 100%;
+    background-color: #040d4a;
+   
+   
+}
+.footer-about-content{
+    display: flex;
+    justify-content: space-around;
+  padding: 2vmin;
+  background-color: #000B58;
+    font-size: 2vmin;
+    align-content: space-between;
+}
+.footer-about-content h3{
+    color: rgb(246, 246, 246);
+    font-size: 2.3vmin;
+}
+.footer-about-content li{
+    color: rgb(158, 157, 154);
+    list-style: none;
+    margin-top: 2vmin;
+}
+.footer-about-content ul{
+margin-top: 10px;
+}
+.footer-about-content li a{
+    text-decoration: none;
+    color: rgb(158, 157, 154);
+}
